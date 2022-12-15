@@ -10,9 +10,9 @@ internal class Program
         int number = EnterNumber("Введите число больше 0");
         int i = 2;
         System.Console.Write($"{number} -> ");
-        while (i < number)
+        while (i <= number)
         {
-            if (i + 2 < number)
+            if (i + 2 <= number)
             {
                 System.Console.Write($"{i}, ");
             }
