@@ -8,19 +8,41 @@ internal class Program
     private static void Main(string[] args)
     {
         int number = EnterNumber("Введите число от 1 до 7");
-        string dayOfTheWeek ="";
-        if(number == 1) dayOfTheWeek = "Понедельник";
-        if(number == 2) dayOfTheWeek = "Вторник";
-        if(number == 3) dayOfTheWeek = "Среда";
-        if(number == 4) dayOfTheWeek = "Четверг";
-        if(number == 5) dayOfTheWeek = "Пятница";
-        if(number == 6) dayOfTheWeek = "Суббота";
-        if(number == 7) dayOfTheWeek = "Воскресение";
+        string dayOfTheWeek = "";
+
+        switch (number)
+        {
+            case 1:
+                dayOfTheWeek = "Понедельник";
+                break;
+            case 2:
+                dayOfTheWeek = "Вторник";
+                break;
+            case 3:
+                dayOfTheWeek = "Среда";
+                break;
+            case 4:
+                dayOfTheWeek = "Четверг";
+                break;
+            case 5:
+                dayOfTheWeek = "Пятница";
+                break;
+            case 6:
+                dayOfTheWeek = "Суббота";
+                break;
+            case 7:
+                dayOfTheWeek = "Воскресение";
+                break;
+            default:
+                Console.WriteLine($"Error! Wrong number!");
+                break;
+        }
+
 
         System.Console.WriteLine($"{number} -> {dayOfTheWeek}");
-        
 
-        
+
+
     }
 
 
