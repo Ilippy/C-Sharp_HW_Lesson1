@@ -1,4 +1,9 @@
-﻿internal class Program
+﻿// Задача №3: Напишите программу, которая будет выдавать название дня недели по заданаму номеру.
+
+// 3 -> Среда
+// 5 -> Пятница
+
+internal class Program
 {
     private static void Main(string[] args)
     {
