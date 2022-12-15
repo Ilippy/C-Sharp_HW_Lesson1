@@ -11,18 +11,17 @@ internal class Program
         int number1 = EnterNumber("Введите первое число");
         int number2 = EnterNumber("Введите второе число");
 
-        if (number1 > number2)
+        int max;
+
+        if (number2 > number1)
         {
-            System.Console.WriteLine($"Первое число {number1} больше чем второе число {number2}");
-        }
-        else if (number2 > number1)
-        {
-            System.Console.WriteLine($"Второе число {number2} больше чем первое число {number1}");
+            max = number2;
         }
         else
         {
-            System.Console.WriteLine($"Числа {number1} и {number2} равны");
+            max = number1;
         }
+        System.Console.WriteLine($"a = {number1} b = {number2} -> max = {max}");
     }
 
 

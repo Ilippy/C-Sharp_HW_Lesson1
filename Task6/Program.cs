@@ -12,11 +12,11 @@ internal class Program
 
         if (number % 2 == 0)
         {
-            System.Console.WriteLine($"Число {number} четное");
+            System.Console.WriteLine($"{number} -> да");
         }
         else
         {
-            System.Console.WriteLine($"Число {number} нечетное");
+            System.Console.WriteLine($"{number} -> нет");
         }
 
     }

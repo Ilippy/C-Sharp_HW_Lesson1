@@ -17,7 +17,7 @@ internal class Program
         if(number2 > max) max = number2;
         if(number3 > max) max = number3;
 
-        System.Console.WriteLine($"Из чисел {number1} {number2} {number3} самое большее число {max}");
+        System.Console.WriteLine($"{number1}, {number2}, {number3} -> {max}");
         
     }
 
